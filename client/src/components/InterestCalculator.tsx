@@ -73,12 +73,14 @@ export const InterestCalculator = (): JSX.Element => {
             [event.target.name]: Number(event.target.value)
         }))
     }
+    const savingsStatement = `Savings for ${values.time} ${values.time === 1 ? 'year' : 'years'}: ${
+        chartData.yAxis[chartData.yAxis.length - 1]
+    }`
+
     return (
         <div style={styles.container}>
             <InterestForm values={values} handleInputChange={handleInputChange} />
-            <div style={styles.element}>
-                Savings for {values.time} years: {chartData.yAxis[chartData.yAxis.length - 1]}
-            </div>
+            <div style={styles.element}>{savingsStatement}</div>
             <div style={styles.element}>
                 <LineChart
                     title="Savings Over time"
