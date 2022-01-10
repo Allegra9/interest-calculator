@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import LineChart from './LineChart'
 import { InterestForm } from './InterestForm'
 import theme from '../theme'
