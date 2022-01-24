@@ -27,19 +27,19 @@ const theme = {
         blue700: '#275789',
         blue800: '#102440',
         blue900: '#040D14',
-        blueHeader: '#1A3458',
+        blueHeader: '#1A3458'
     },
     fontSizes: {
         xs: '12px',
         sm: '14px',
         md: '16px',
         lg: '18px',
-        xl: '20px',
+        xl: '20px'
     },
     fontWeights: {
         normal: 400,
         medium: 500,
-        bold: 700,
+        bold: 700
     },
     breakpoints: ['30em', '48em', '62em', '80em'],
     space: {
@@ -76,8 +76,8 @@ const theme = {
         64: '16rem',
         72: '18rem',
         80: '20rem',
-        96: '24rem',
-    },
+        96: '24rem'
+    }
 }
 
 export default theme

@@ -1,6 +1,5 @@
 import React from 'react'
-import { Box, Image } from '@chakra-ui/react'
-import images from '../images'
+import { Box } from '@chakra-ui/react'
 
 const NavHeader = () => (
     <Box
@@ -11,7 +10,7 @@ const NavHeader = () => (
         py={4}
         bg="blue100"
     >
-        <Image src={images.fullBrandLogo} alt="Finimize" width="160px" />
+        <div style={{ fontWeight: 600 }}>Interest calculator</div>
     </Box>
 )
 

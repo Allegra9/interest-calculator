@@ -21,7 +21,7 @@ const styles = {
 }
 
 const serverErrorMessage =
-    'An error happened. Please try again or get in touch at interestcalc@finimize.com'
+    'An error happened. Please try again or get in touch at interestcalc@no-reply.com'
 
 export const InterestCalculator = (): JSX.Element => {
     const [values, setValues] = useState({
@@ -71,6 +71,7 @@ export const InterestCalculator = (): JSX.Element => {
         setValues(prevState => ({
             ...prevState,
             [event.target.name]: Number(event.target.value)
+            // write a diff between this and parseInt for ''
         }))
     }
     const savingsStatement = `Savings for ${values.time} ${values.time === 1 ? 'year' : 'years'}: ${
